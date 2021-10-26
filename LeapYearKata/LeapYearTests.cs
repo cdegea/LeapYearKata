@@ -21,5 +21,11 @@ namespace LeapYearKata
         {
             Assert.False(LeapYear.IsLeapYear(1906));
         }
+
+        [Fact]
+        public void Is1907LeapYear()
+        {
+            Assert.False(LeapYear.IsLeapYear(1907));
+        }
     }
 }
