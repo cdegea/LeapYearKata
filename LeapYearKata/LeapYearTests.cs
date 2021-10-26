@@ -20,11 +20,20 @@ namespace LeapYearKata
         }
 
         [Theory]
-        [InlineData(2000)]
-        [InlineData(2100)]
+        [InlineData(1700)]
+        [InlineData(1900)]
         public void IsDivisibleBy100(int year)
         {
             Assert.False(LeapYear.IsLeapYear(year));
+        }
+
+        [Theory]
+        [InlineData(800)]
+        [InlineData(1200)]
+        [InlineData(1600)]
+        public void IsNumberDivisibleBy400(int year)
+        {
+            Assert.True(LeapYear.IsLeapYear(year));
         }
     }
 }
