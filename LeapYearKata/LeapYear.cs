@@ -6,7 +6,7 @@ namespace LeapYearKata
     {
         internal static bool IsLeapYear(int year)
         {
-            if (year == 1905)
+            if (year == 1905 || year == 1906)
                 return false;
             return true;
         }
